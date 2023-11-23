@@ -6,40 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="./styles.css">
+  <script src="./index.js"></script>
 </head>
 
 <body>
-  <div class="portfolio-container">
-    <section>
-      <div class="header-container">
-        <div class="header-content">
-          <p>Daniel Bui</p>
-          <p>Front-End Developer</p>
-          <p>Vietnam</p>
-        </div>
-        <div class="avatar-container">
-          <img src="./assets/img/avatar.jpeg" class="avatar" />
-        </div>
-        <div class="greeting-content">
-          <p>Hi there, My name is
-            <span class="my-name">Daniel</span>!
-          </p>
-        </div>
-        <i class="quote">
-          "A small guy who brings every single pixel to create great things."
-        </i>
-        <span class="scroll">
-          Scroll down to know more about me
-        </span>
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <p>Daniel Bui</p>
+        <p>Front-End Developer</p>
+        <p>Vietnam</p>
       </div>
-    </section>
+      <div class="avatar-container">
+        <img src="./assets/img/avatar.jpeg" class="avatar" />
+      </div>
+      <div class="greeting-content">
+        <p>Hi there, My name is <span class="my-name">Daniel</span>!</p>
+      </div>
+      <i class="quote"> "A small guy who brings every single pixel to create great things!</i>
+      <p class="scroll">Scroll down to know more about me</p>
+    </div>
+  </header>
+
+  <div class="portfolio-container">
 
     <section>
       <div class="self-intro-container">
         <p class="about-me-text">About me</p>
         <p class="intro-text">
-          "So happy to see you! My real name is Bui Ba Long, hailing from beautiful Vietnam. Delve into my portfolio to
-          witness how I infuse every project with passion and expertise. I look forward to contributing some value to
+          "So happy to see you! My real name is Bui Ba Long, hailing from beautiful Vietnam. Delve into my portfolio
+          to witness how I infuse every project with passion and expertise. I look forward to contributing some value to
           you."
         </p>
         <div class="career-goal-container">
@@ -58,13 +54,13 @@
     <section>
       <div class="experiences-container">
         <p class="experiences-text">Experiences</p>
-        <div style="display: flex;">
+        <div>
           <div class="experiences-detail">
             <p class="education-text">Education</p>
             <div class="education-info">
               <p>2018 - 2023</p>
-              <p style="display: flex;justify-content: center;">Thang Long university</p>
-              <p style="display: flex;justify-content: end;">English studies</p>
+              <p style="display: flex;justify-content: center;">English studies</p>
+              <p style="display: flex;justify-content: end;">Thang Long university</p>
             </div>
             <p class="skills-text">Skills</p>
             <div class="skills-detail">
@@ -73,30 +69,27 @@
                   <div class="skills-index-layer"></div>
                 </div>
               </div>
-              <p>
-                React Native
-              </p>
+              <p class="skill-name">React Native</p>
             </div>
+
             <div class="skills-detail">
               <div class="skills-index">
                 <div class="html-css-skill">
                   <div class="skills-index-layer"></div>
                 </div>
               </div>
-              <p>
-                HTML, CSS
-              </p>
+              <p class="skill-name">HTML, CSS</p>
             </div>
+
             <div class="skills-detail">
               <div class="skills-index">
                 <div class="java-script-skill">
                   <div class="skills-index-layer"></div>
                 </div>
               </div>
-              <p>
-                JavaScript
-              </p>
+              <p class="skill-name">JavaScript</p>
             </div>
+
             <p class="project-text">Projects</p>
             <div class="career-detail-container">
               <p class="time-line">September 2019 - January 2020</p>
@@ -116,10 +109,12 @@
               <p class="time-line">April 2023 - Now</p>
               <p class="work-place">Front End at JUST.ENGINEER company</p>
               <ul class="list">
-                <li>At JUST.engineer, I'm learned JS basic and have some small personal projects both mobile and web
+                <li>
+                  At JUST.engineer, I have learned basic HTML, CSS, JavaScript and a little bit of TypeScript to join
+                  some personal projects for both mobile and web development.
                 </li>
-                <li>Pyeon mobile app: After 2 months as intern ship, I started to step on real project, that app was big
-                  and have lots of challenge for me.</li>
+                <li>Pyeon mobile app: After 2 months as internship, I started to step on real project, that app was
+                  big and have lots of challenge for me.</li>
               </ul>
             </div>
           </div>
@@ -127,42 +122,47 @@
       </div>
     </section>
 
-    <section>
-      <div class="footer-container">
-        <p class="contact-text">Contact</p>
-        <p class="drop-message-text">Drop me a message</p>
-        <p class="message-text">
-          If my portfolio has piqued your interest and you're eager to explore more opportunities, please don't
-          hesitate
-          to contact me! I truly appreciate your interest and looking forward to engaging in further conversations.
-        </p>
+  </div>
 
-        <div class="contact-info-section">
-          <img src="./assets/img/phone.jpeg" class="phone-image" alt="Phone Image">
-          <div class="basic-contact-section">
-            <div class="contact-info-wrapper">
-              <img src="./assets/icon/phone-icon.jpeg" class="basic-icon">
-              <p>+8491693126</p>
-            </div>
-            <div class="contact-info-wrapper">
-              <img src="./assets/icon/gmail-icon.jpeg" class="basic-icon">
-              <p> balongbui2k@gmail.com</p>
-            </div>
-            <div class="contact-info-wrapper">
-              <img src="./assets/icon/address-icon.jpeg" class="basic-icon">
-              <p>House No: 05, 108 Lane, Bui Xuong Trach Street, Thanh Xuan District, Hanoi, Vietnam</p>
-            </div>
-            <p class="social-contact-text">Or inbox to me via</p>
-            <div class="social-contact-icons">
-              <img src="./assets/icon/facebook.jpg" class="social-icon">
-              <img src="./assets/icon/instagram-icon.jpeg" class="social-icon">
-            </div>
+  <footer>
+    <div class="footer-container">
+      <p class="contact-text">Contact</p>
+      <p class="drop-message-text">Drop me a message</p>
+      <p class="message-text">
+        If my portfolio has piqued your interest and you're eager to explore more opportunities, please don't
+        hesitate to contact me! I truly appreciate your interest and looking forward to engaging in further
+        conversations.
+      </p>
+
+      <div class="contact-info-section">
+        <img src="./assets/img/phone.jpeg" class="phone-image" alt="Phone Image">
+        <div class="basic-contact-section">
+          <div class="contact-info-wrapper">
+            <img src="./assets/icon/phone-icon.jpeg" class="basic-icon" onclick="handleCopy('phone')">
+            <p id="phone">+84916931268</p>
+          </div>
+          <div class="contact-info-wrapper">
+            <img src="./assets/icon/gmail-icon.jpeg" class="basic-icon" onclick="handleCopy('email')">
+            <p id="email"> balongbui2k@gmail.com</p>
+          </div>
+          <div class="contact-info-wrapper">
+            <img src="./assets/icon/address-icon.jpeg" class="basic-icon" onclick="handleCopy('address')">
+            <p id="address">House No: 05, 108 Lane, Bui Xuong Trach Street, Thanh Xuan
+              District, Hanoi, Vietnam</p>
+          </div>
+          <p class="social-contact-text">Or inbox to me via</p>
+          <div class="social-contact-icons">
+            <a href="https://www.facebook.com/profile.php?id=100006131627374" style="z-index: 1;" target="_blank">
+              <img src="./assets/icon/facebook.jpg" class="social-icon" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/tuiladuane/" style="z-index: 1;" target="_blank">
+              <img src="./assets/icon/instagram-icon.jpeg" class="social-icon" alt="Instagram">
+            </a>
           </div>
         </div>
       </div>
-    </section>
-
-  </div>
+    </div>
+  </footer>
 </body>
 
 </html>
