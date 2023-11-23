@@ -24,7 +24,7 @@
   font-family: monospace;
 }
 
-/* body::before,
+body::before,
 html::before {
   content: "";
   width: 100%;
@@ -32,7 +32,7 @@ html::before {
   opacity: 0.09;
   position: fixed;
   background-image: url("./assets/img/noise.jpeg");
-} */
+}
 
 li {
   font-size: var(--content-text);
